@@ -28,7 +28,7 @@ def heatmap(ME, title='', x_label='', y_label='', dpi=300):
     fig.set_dpi(dpi)
     return axes
 
-def heatmaps(ME, ax=None, title='', x_label='', y_label='', dpi=300):
+def heatmapsfig(ME, ax=None, title='', x_label='', y_label='', dpi=300):
     if ax is None:
         fig, ax = plt.subplots()
     sns.heatmap(ME, ax=ax, cbar=True)
